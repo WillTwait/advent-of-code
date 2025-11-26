@@ -1,0 +1,9 @@
+[package]
+name = "advent-of-code"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "2020-01"
+path = "2020/01/solution.rs"
+
