@@ -18,7 +18,7 @@ My solutions to [Advent of Code](https://adventofcode.com/) puzzles.
 ## Setup a New Day
 
 ```bash
-python setup.py 2025 1
+python setup.py 2025 1 py
 ```
 
 This creates `2025/01/` with empty input files and solution templates.
