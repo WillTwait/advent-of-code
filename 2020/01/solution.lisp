@@ -18,11 +18,18 @@
 	  when (gethash pair num-set)
 	    return (* n pair)
 	    ))
-    
-  0)
+)
 
 (defun part2 (lines)
-  0)
+  (let ((num-set (make-num-set lines)))
+    (loop for n in lines
+	  for sum = (- 2020 n) do
+	    (loop for i in lines
+		  for final-sum = (- sum i)
+		  when (gethash final-sum num-set)
+		    do (return-from part2 (* final-sum i n))
+	  )))
+  )
 
 (defun main ()
   (let ((lines (read-input "input.txt")))
